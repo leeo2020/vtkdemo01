@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.13)
+project(vtkdemo)
+find_package( VTK 8.2.0 REQUIRED )
+include(${VTK_USE_FILE})
+add_executable(${PROJECT_NAME} page001.cpp)
+target_link_libraries(${PROJECT_NAME} ${VTK_LIBRARIES})
